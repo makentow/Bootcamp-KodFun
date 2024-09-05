@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <h1>Siteme Hoşgeldiniz</h1>
+    <h1 id="top">Siteme Hoşgeldiniz</h1>
     <h2>Sitemin İçeriği</h2>
     <ul>
         <li><a href="#hakkimda">Hakkımda</a></li>
@@ -17,7 +17,7 @@
         <li><a href="#iletisim">İletişim</a></li>
     </ul>
 
-    <h2>Hakkımda</h2>
+    <h2 id="hakkimda">Hakkımda</h2>
     <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quod,
         dolores animi possimus accusantium officiis! Deleniti, culpa sint. Ipsum
@@ -36,7 +36,7 @@
         saepe sit sapiente sed. Odit consequuntur vero nihil quia!
     </p>
 
-    <h2>Hobilerim</h2>
+    <h2 id="hobilerim">Hobilerim</h2>
 
     <ul>
         <li>Lorem, ipsum.</li>
@@ -53,7 +53,7 @@
         <li>Officia, impedit.</li>
     </ul>
 
-    <h2>Projelerim</h2>
+    <h2 id="projelerim">Projelerim</h2>
     <h3>Proje 1</h3>
     <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam illum
@@ -73,9 +73,9 @@
         quo tempora voluptatem autem omnis temporibus expedita non ex?
     </p>
 
-    <h2>İletişim</h2>
+    <h2 id="iletisim">İletişim</h2>
     <!-- Formlarda action kısmına formun teslim edileceği sayfanın adresi girilir. Şimdilik sunucu taraflı çalışmadığımız için boş geçmek adına sayfa içi bir link verilmiştir.  -->
-    <form action="gonder.html">
+    <form action="gonder.html" method="post">
         <label for="ad">Adınız</label><br>
         <input id="ad" type="text" name="ad">
         <br>
@@ -92,8 +92,12 @@
         <textarea id="mesaj" name="mesaj" cols="30" rows="4"></textarea>
         <br>
         <br>
-        <input type="submit" value="Gönder">
+        <button type="submit">Gönder</button>
+        <!-- <input type="submit" value="Gönder"> -->
+        
         <br><br><br><br><br><br><br><br>
+
+        <a href="#top">Sayfanın üstüne çık</a>
         <hr>
         Her hakkı saklıdır &copy; 2024
     </form>
