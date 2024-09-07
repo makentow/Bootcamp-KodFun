@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Element Seçimi */
+        h1 {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* CLASS Seçimi   */
+        .favori {
+            color: #007aff;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        /* ID Seçimi */
+        #sazova::after {
+            color: #053055;
+            content: " (Masal Şatosu)";
+        }
+
+        #odunpazari-link::after {
+            color: #053055;
+            content: " (https://www.odunpazari.bel.tr/)";
+        }  
+
+        /* immediate child  */
+        div>p {
+            color: red;
+            margin: 0 40px;
+            text-align: justify;
+            font-size: 90%;
+        }
+        
+        /* Gruplama Örneği */
+        div p{
+            color: rgb(65, 38, 9);
+        } 
+
+        h1, h2 {
+            background-color: rgb(163, 55, 16);
+            color: white;
+            text-align: left;
+            padding-left: 5px;
+        }
+
+        /* Attribute  */
+        [title] {
+            font-style: italic;
+        }
+
+        span[title] {
+            background-color: coral;
+        }
+
+        h1+p {
+            background-color: aquamarine;
+        }
+        /* odd ya da 2n+1 tek sayıları seçer */
+        li:nth-child() {
+            background-color: darkorchid;
+        }
+
+        li:nth-child(6){
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: center;
+            font-style: italic;
+            font-family: Arial;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 5px red;
+            color: blue;
+            font-weight: bold;
+            
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1 title="Test">Eskişehir</h1>
+
+    <p>Eskişehir, Türkiye'nin İç Anadolu Bölgesi'nde yer alan, öğrenci nüfusu ile öne çıkan, modern bir şehirdir. Tarihi
+        Friglerden Osmanlılara kadar uzanan zengin bir geçmişe sahiptir. Porsuk Çayı, şehrin merkezinden geçer ve
+        Eskişehir'e ayrı bir güzellik katar.</p>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio fuga mollitia expedita dicta aliquid, ipsum
+            corrupti asperiores magnam cumque id. Beatae ullam incidunt dolore doloremque!</p>
+        
+        <section>
+            <p>Bu satır etkilenmeyecektir!!!!</p>
+        </section>
+        
+    </div>
+
+    <h2>Eskişehir'in İlçeleri</h2>
+
+    <ul>
+        <li id="odunpazari-link" class="favori"><a class="favori" target="_blank"
+                href="https://www.odunpazari.bel.tr/">Odunpazarı</a></li>
+        <li>Tepebaşı</li>
+        <li>Sivrihisar</li>
+        <li>Alpu</li>
+        <li>Mihalıççık</li>
+        <li>Sarıcakaya</li>
+        <li>Beylikova</li>
+        <li>Çifteler</li>
+        <li>Günyüzü</li>
+        <li>İnönü</li>
+        <li>Mihalgazi</li>
+        <li>Seyitgazi</li>
+    </ul>
+
+    <h2><span title="test1">Gezilecek</span> Yerler</h2>
+
+    <ul>
+        <li>Odunpazarı Evleri</li>
+        <li id="sazova" class="favori">Sazova Bilim ve Kültür Parkı</li>
+        <li>Yılmaz Büyükerşen Balmumu Heykeller Müzesi</li>
+        <li>Porsuk Çayı</li>
+    </ul>
+
+    <h2>Meşhur Yemekler</h2>
+
+    <ul>
+        <li>Çibörek</li>
+        <li>Met Helvası</li>
+        <li>Balaban Kebabı</li>
+        <li>Göbete</li>
+    </ul>
+
+    <img src="eskisehir.webp" alt="Yüklenemedi!" width="500">
+
+</body>
+
+</html>
