@@ -1,0 +1,39 @@
+body {
+  /* background-color: #8cb4ff;
+  background-image: url(pikachu.png);
+  background-size: 300px;
+  background-position: left 40px bottom 40px;
+  /* background-position-x: 50px;
+  background-position-y: calc(100% - 50px); 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+   */
+
+  background: url(pikachu.png) no-repeat fixed left 40px bottom 40px / 300px;
+}
+
+
+
+
+.kutu1 {
+    background-color: #107d39;
+    color: white;
+    font-weight: bold;
+    padding: 2px;
+    padding-left: 4px;
+}
+
+.kutu2 {
+    background-image: url(https://picsum.photos/id/111/500/200);
+    color: rgba(72, 180, 200, .7);
+    height: 200px;
+    font-family: Impact;
+    font-size: 128px;
+    letter-spacing: 12px;
+    
+}
+.ortala {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
