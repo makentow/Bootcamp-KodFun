@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        /* 
+            div elementlerine aşağıdaki özellikleri taşıyacak şekilde css verin::after
+
+            1.toplam yüksekliği: 200px
+            2. toplam genişliği: 200px
+            3. arka plan rengi random olacak
+            
+        
+        */
+        .kutu {
+            box-sizing: border-box;
+            background-color: yellow;
+            border: 10px dashed green;
+            padding: 20px;
+            height: 200px;
+            width: 100%;
+            margin-top: 20px;
+        }
+        header {
+            background-color: pink;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>HEADER HEADER HEADER</header>
+    <div class="kutu">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, recusandae! Error temporibus nesciunt, esse nobis asperiores mollitia culpa nam porro molestiae dolore dolorem enim laudantium, dicta sequi, maiores odio magnam.</div>
+</body>
+</html>
