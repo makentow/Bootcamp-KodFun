@@ -5,32 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Box Model</title>
     <style>
-        /* 
-            div elementlerine aşağıdaki özellikleri taşıyacak şekilde css verin::after
-
-            1.toplam yüksekliği: 200px
-            2. toplam genişliği: 200px
-            3. arka plan rengi random olacak
-            
-        
-        */
-        .kutu {
+        * {
             box-sizing: border-box;
+        }
+
+        .kutu1 {
             background-color: yellow;
-            border: 10px dashed green;
+            border: 10px solid green;
             padding: 20px;
-            height: 200px;
+            height: 200px;  
             width: 100%;
             margin-top: 20px;
         }
+
         header {
-            background-color: pink;
+            background-color: violet;
             margin-bottom: 20px;
+            text-align: center;
+            padding: 20px;
+            border: 15px dashed orange;;
         }
     </style>
 </head>
 <body>
     <header>HEADER HEADER HEADER</header>
-    <div class="kutu">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, recusandae! Error temporibus nesciunt, esse nobis asperiores mollitia culpa nam porro molestiae dolore dolorem enim laudantium, dicta sequi, maiores odio magnam.</div>
+    <div class="kutu1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis eum odio maxime, aspernatur optio facere voluptate laboriosam sint id molestias, reprehenderit nihil quos cum quisquam dolorem tenetur consequuntur vel atque!</div>
 </body>
 </html>

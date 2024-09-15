@@ -4,57 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
     <style>
-
-        /* 
-            div elementlerine aşağıdaki özellikleri taşıyacak şekilde css verin
-
-            1. toplam yüksekliği: 200px
-            2. toplam genişliği: 200px
-            3. arka plan rengi random olacak
-            4. 20px dolgu padding
-            5. 10px border
-            6. 15px margin
-            7. yazı rengi beyaz
-        
-        */
-
-        .kutu {
+        /* div elementlerine aşağıdaki özellikleri taşıyacak şekilde css verin:
+        1. toplam yüksekliği: 200px
+        2. toplam genişliği: 200px 
+        3. arka plan rengi (siz seçin) verin
+        4. 20px dolgu (padding)
+        5. 10px border
+        6. 15px margin
+        7. yazı rengi beyaz
+        */ 
+        div {
+            box-sizing: border-box;
             height: 200px;
             width: 200px;
-            box-sizing: border-box;
-            background-color:  hsl(214, 7%, 20%);
+            background-color: cornflowerblue;
             padding: 20px;
-            border: 10px solid #cc47cc;
+            border: 10px solid black;
             margin: 15px;
             color: white;
             float: left;
-            outline: 10px solid rgb(201, 201, 3);
-            
+            outline: 10px solid #ffff008a;
+            /* outline-offset: 5px; */
         }
-
         main {
             border: 10px solid red;
-            
         }
-        
-
     </style>
 </head>
 <body>
+    <!-- PROBLEM: main kutusunun kenarlığı içindeki her şeyi çevrelemesi gerekirken neden şu an çevrelemiyor. Cevabı float konusunda gelecek? -->
     <main>
-        <div class="kutu">1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus veritatis quisquam voluptate sequi animi provident quia blanditiis  iure!</div>
-        <div class="kutu">2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus veritatis quisquam voluptate sequi animi provident quia blanditiis  iure!</div>
-        <div class="kutu">3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus veritatis quisquam voluptate sequi animi provident quia blanditiis  iure!</div>
-        <div class="kutu">4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus veritatis quisquam voluptate sequi animi provident quia blanditiis  iure!</div>
-        <div class="kutu">5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus veritatis quisquam voluptate sequi animi provident quia blanditiis  iure!</div>
-        <div class="kutu">6 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus veritatis quisquam voluptate sequi animi provident quia blanditiis  iure!</div>
-        <div class="kutu">7 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus veritatis quisquam voluptate sequi animi provident quia blanditiis  iure!</div>
-        <div class="kutu">8 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus veritatis quisquam voluptate sequi animi provident quia blanditiis  iure!</div>
-        <div class="kutu">9 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus veritatis quisquam voluptate sequi animi provident quia blanditiis  iure!</div>
-        <div class="kutu">10 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus veritatis quisquam voluptate sequi animi provident quia blanditiis  iure!</div>
-        
+        <!-- div*10>{Kutu $} -->
+        <div>Kutu 1</div>
+        <div>Kutu 2</div>
+        <div>Kutu 3</div>
+        <div>Kutu 4</div>
+        <div>Kutu 5</div>
+        <div>Kutu 6</div>
+        <div>Kutu 7</div>
+        <div>Kutu 8</div>
+        <div>Kutu 9</div>
+        <div>Kutu 10</div>
     </main>
 </body>
 </html>
